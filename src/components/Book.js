@@ -25,9 +25,10 @@ class BookComponent extends Component{
     render(){
         return(
             <div className="Book">
-                <h2 onClick={this.props.change}>Book Name:{this.props.bookName}</h2>
+                {/* <h2 onClick={this.props.change}>Book Name:{this.props.bookName}</h2> */}
+                <h2 onClick={this.props.delete}>Book Name:{this.props.bookName}</h2>
                 <h2>Writer:{this.props.writer}</h2>
-                <input type="text" onChange={this.props.inputName} value={this.props.bookName}/>
+                <input type="text" onChange={this.props.changeWithInputState} value={this.props.bookName}/>
             </div>
         );
     }
